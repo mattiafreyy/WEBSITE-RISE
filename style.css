@@ -356,3 +356,15 @@ body{background:var(--paper)}
 @media(prefers-reduced-motion:reduce){.methods{height:auto}.methods .methods-sticky{height:auto;padding:100px var(--gutter)}.methods .method-plane{position:relative;left:auto;top:auto;transform:none;display:grid;grid-template-columns:1fr 1fr;gap:24px;overflow:visible}.methods .method-intro{position:static;width:auto;grid-column:1/-1;margin-bottom:35px}.methods .method-nav,.methods .method-caption,.methods .method-count{display:none}.methods .method-card{position:relative;left:auto;top:auto;width:100%;height:auto;max-height:none;min-height:360px!important;margin:0;visibility:visible!important;opacity:1!important;transform:none!important;padding:32px}}
 .reduce-motion .methods{height:auto}.reduce-motion .methods-sticky{height:auto;padding:100px var(--gutter)}.reduce-motion .methods .method-plane{position:relative;left:auto;top:auto;transform:none;display:grid;grid-template-columns:1fr 1fr;gap:24px;overflow:visible}.reduce-motion .methods .method-intro{position:static;width:auto;grid-column:1/-1;margin-bottom:35px}.reduce-motion .methods .method-nav,.reduce-motion .methods .method-caption,.reduce-motion .methods .method-count{display:none}.reduce-motion .methods .method-card{position:relative;left:auto;top:auto;width:100%;height:auto;max-height:none;min-height:360px!important;margin:0;visibility:visible!important;opacity:1!important;transform:none!important;padding:32px}
 @media(max-width:700px){.methods{display:none}}
+
+/* Portrait camera keeps both the screen and the original DELREY sculpture in view. */
+@media(max-width:700px){
+ .room-world{width:max(114.15525115vw,50svh);height:max(228.31050230vw,100svh);aspect-ratio:1/2;transform-origin:43.8% 50%;transform:translate(-43.8%,-50%)}
+ .room-screen{left:35.4739010334%;top:43.0233776569%;width:48.0744719505%;height:13.5209441185%}
+ .reduce-motion .room-sticky{height:100svh;top:auto}
+ .reduce-motion .room-world{width:max(114.15525115vw,50svh)!important;height:max(228.31050230vw,100svh)!important;transform:translate(-43.8%,-50%)!important}
+}
+@media(prefers-reduced-motion:reduce) and (max-width:700px){
+ .room-sticky{height:100svh;top:auto}
+ .room-world{width:max(114.15525115vw,50svh)!important;height:max(228.31050230vw,100svh)!important;transform:translate(-43.8%,-50%)!important}
+}

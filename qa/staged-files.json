@@ -9,13 +9,13 @@
     },
     {
       "file": "style.css",
-      "bytes": 56018,
-      "sha256": "dda62de33d07da998c368ea0c08e321ff57d1df3f18970dbd7aaff28ecf45a63"
+      "bytes": 56842,
+      "sha256": "1a6172bf5deca514c7ce4350abaae31015b6848d2353319a8ca4b468880a0550"
     },
     {
       "file": "site.js",
-      "bytes": 57299,
-      "sha256": "91fe513efc27ed32535872f558fb166f4f18116441d6290d8d444f6a07ba2926"
+      "bytes": 57643,
+      "sha256": "fcbbf6c43b6ac4ba088978cb20cccf7ad64916ca660cced9a3ea9eede1b4a723"
     },
     {
       "file": "assets/NimbusSans-Regular.otf",
@@ -103,6 +103,11 @@
       "sha256": "f35154beebab2bb3f151ca531c9591b3cd2433efc31e4385eb9f8441b578140f"
     },
     {
+      "file": "assets/cinematic-room-mobile.webp",
+      "bytes": 215332,
+      "sha256": "117773d274727408049854b6335b11bff9a8eb5d8b39eb7d52aa2ecf07075ad2"
+    },
+    {
       "file": "assets/stationery.webp",
       "bytes": 43608,
       "sha256": "e577d4b0619c831d8d40a1d53e0a4bf6f625703da3a73b21d9456e59b2265d3e"
@@ -173,5 +178,5 @@
       "sha256": "84acb090fc9f0ca6ae24c934974e5315c5a1407c45d66c6ac4826c363d36ae92"
     }
   ],
-  "bytes": 11381845
+  "bytes": 11598345
 }

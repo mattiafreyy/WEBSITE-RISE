@@ -15,7 +15,14 @@ function sampleCurve(keys,p,column=1){
  const t2=t*t,t3=t2*t;return(2*t3-3*t2+1)*a[column]+(t3-2*t2+t)*span*tangent(k-1)+(-2*t3+3*t2)*b[column]+(t3-t2)*span*tangent(k);
 }
 function roomProgress(p){return 1-(sampleCurve(roomKeys,p)-1)/2.4}
-function room(p,w,h){const imageW=Math.max(w,h*16/9),imageH=imageW*9/16;const screen={x:.34323543310165405,y:.33822327852249146,w:.3135291337966919,h:.3135290741920471};const fullScale=Math.max(w/(imageW*screen.w),h/(imageH*screen.h))*1.068;const t=roomProgress(p);return {scale:lerp(fullScale,1,t),imageW,imageH,originX:screen.x+screen.w/2,originY:screen.y+screen.h/2,hold:p>=.72,screen}}
+function room(p,w,h){
+ const mobile=w<=700;
+ const imageW=mobile?Math.max(w/.876,h/2):Math.max(w,h*16/9),imageH=imageW*(mobile?2:9/16);
+ const screen=mobile?{x:.3547390103340149,y:.43023377656936646,w:.48074471950531006,h:.13520944118499756}:{x:.34323543310165405,y:.33822327852249146,w:.3135291337966919,h:.3135290741920471};
+ const fullScale=mobile?1.02:Math.max(w/(imageW*screen.w),h/(imageH*screen.h))*1.068;
+ const t=roomProgress(p);
+ return {scale:lerp(fullScale,1,t),imageW,imageH,originX:mobile?.438:screen.x+screen.w/2,originY:mobile?.5:screen.y+screen.h/2,hold:p>=.72,screen};
+}
 function cards(p,index,h){const center=.5076+index*.1984;const local=(p-center)/.1984;return {x:[-15,19,-12,16][index],y:local*-h*1.3,angle:clamp(local,-1,1)*-15*(index%2?-1:1),opacity:1-clamp((Math.abs(local)-.85)/.35),scale:1-Math.min(.025,Math.abs(local)*.01)}}
 function finale(p,w,h){
  const keys=[[0,.7,-155,-.04,.60],[.074,1.1,-123.5,-.06,.41],[.162,1.2,-20.8,-.13,.02],[.25,2.565,3.65,-.12,-.03],[.338,4.516,8.2,-.09,-.02],[.426,6.473,12.77,-.02,0],[.515,25.794,14,0,0],[.60,Math.max(w,h)/100*4,14,0,0],[1,Math.max(w,h)/100*4,14,0,0]];
