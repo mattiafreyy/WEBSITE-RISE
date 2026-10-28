@@ -1,0 +1,10 @@
+checks/node_modules/
+hero-source/
+assets/*.png
+*.tar.gz
+
+# Retained local render-development artifacts
+assets/cinematic-room-preview.webp
+room-source/*.blend1
+room-source/*.log
+room-source/room-preview.png

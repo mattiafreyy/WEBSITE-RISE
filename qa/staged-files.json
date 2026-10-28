@@ -1,0 +1,177 @@
+{
+  "deployment": "not performed",
+  "browserQA": false,
+  "files": [
+    {
+      "file": "index.html",
+      "bytes": 2963,
+      "sha256": "89129d799f5f3c0b3bc24b9b23afcd4b70f12ceb4ea34e83b7d81de3ce566b59"
+    },
+    {
+      "file": "style.css",
+      "bytes": 50668,
+      "sha256": "abf84497774b490955dbd1e5f2071383ccca4603dd7b98ea73e755e1fa33104e"
+    },
+    {
+      "file": "site.js",
+      "bytes": 56859,
+      "sha256": "bd4bfc2ebd3848e4ed304270648e5c165f6efd2525774219060e99aa6698fd84"
+    },
+    {
+      "file": "assets/NimbusSans-Regular.otf",
+      "bytes": 82264,
+      "sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08"
+    },
+    {
+      "file": "assets/NimbusSans-Bold.otf",
+      "bytes": 83264,
+      "sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67"
+    },
+    {
+      "file": "assets/NimbusMonoPS-Regular.otf",
+      "bytes": 77936,
+      "sha256": "4f225ca8e13acb16f733ce741693105e527d5f7a5443901b9ecc190fca4e149b"
+    },
+    {
+      "file": "assets/LICENZA_URW.txt",
+      "bytes": 52517,
+      "sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458"
+    },
+    {
+      "file": "assets/DELREY_Icona_nero.svg",
+      "bytes": 3134,
+      "sha256": "3a3d1ff903fd30e4d3b02f4015a989097e4ada6f84370e955cd7211402d1baa2"
+    },
+    {
+      "file": "assets/DELREY_Icona_bianco.svg",
+      "bytes": 3134,
+      "sha256": "5bfc493fd261f53faee979489cc86f1364053f1e449fbcf4839661b3c7a0791b"
+    },
+    {
+      "file": "assets/DELREY_Logo_nero.svg",
+      "bytes": 5856,
+      "sha256": "e78a59a198daf51d7e55c3c3d9447d9b66a759418e8dd8232525ac1594c20dcf"
+    },
+    {
+      "file": "assets/DELREY_Logo_bianco.svg",
+      "bytes": 5856,
+      "sha256": "4bf82c515611edf609300c071ab4ff061cbea1832fb873e03439044e3fbfc64b"
+    },
+    {
+      "file": "assets/DELREY_Wordmark_nero.svg",
+      "bytes": 4507,
+      "sha256": "8d0ac455303122a3889d604f79e64da1634343584f8f5b8736dd3505c9af5b21"
+    },
+    {
+      "file": "assets/DELREY_Wordmark_bianco.svg",
+      "bytes": 4507,
+      "sha256": "9b05a9adb6bb18c9afd512301b6eeefb2057f3e5e0030185389af6c6ac4f1e2e"
+    },
+    {
+      "file": "assets/hero-chrome.webp",
+      "bytes": 127272,
+      "sha256": "0721d149afe0d1ef5c03600456e4d4afb82fd85d31e8f820db7d054050b63759"
+    },
+    {
+      "file": "assets/hero-puffy.webp",
+      "bytes": 66312,
+      "sha256": "a0982d8986c641d6e8e3ea5777ed1e9fd83b5a457d6bca4679802d39892485bd"
+    },
+    {
+      "file": "assets/hero-candy.webp",
+      "bytes": 97370,
+      "sha256": "3df40f40c95ae3e6c3f43ad00849ea5a3c83b1e5c0e5d4fbf2a0a78b78b9693b"
+    },
+    {
+      "file": "assets/hero-symbol-mesh.json",
+      "bytes": 581455,
+      "sha256": "7503de3ade1d23e7b901f3724987897e47399eba4ac2351091076100ea2685a4"
+    },
+    {
+      "file": "assets/hero-symbol-poster.webp",
+      "bytes": 39976,
+      "sha256": "36051cc7ef0ce2c34e3c9a8ebad0d70ea3cb2791ce3676bea9e496d7c4d089ba"
+    },
+    {
+      "file": "assets/hero-symbol-rotation-atlas.webp",
+      "bytes": 304994,
+      "sha256": "9bf77a38a55b825636aa2f5625952d775451dbbe7455524cbcff0b9b0dd98dd1"
+    },
+    {
+      "file": "assets/cinematic-room.webp",
+      "bytes": 336042,
+      "sha256": "f35154beebab2bb3f151ca531c9591b3cd2433efc31e4385eb9f8441b578140f"
+    },
+    {
+      "file": "assets/stationery.webp",
+      "bytes": 43608,
+      "sha256": "e577d4b0619c831d8d40a1d53e0a4bf6f625703da3a73b21d9456e59b2265d3e"
+    },
+    {
+      "file": "assets/stationery-white.webp",
+      "bytes": 39418,
+      "sha256": "f42016f1651aeb719f3946bcd5c2edd404fb3c74f182ec62fadde9fa3af7b8cc"
+    },
+    {
+      "file": "assets/origin.webp",
+      "bytes": 70384,
+      "sha256": "c28bbe715d175744eeb34ee421cf71e6b6f62f228881afec5885954286ea4752"
+    },
+    {
+      "file": "assets/aura.webp",
+      "bytes": 111642,
+      "sha256": "a314704971a43f7c5ede6d38ca9d88f550463539528943b4986a83fcf209531e"
+    },
+    {
+      "file": "assets/matter.webp",
+      "bytes": 342584,
+      "sha256": "fd9bf7aa0570ae73beb89f45a1a3d1bb6c6ae508aa7f9cadc52ca66101f38deb"
+    },
+    {
+      "file": "assets/film.mp4",
+      "bytes": 5002891,
+      "sha256": "a4b81624c9615d09f51944446214e998c59ccc99446659dd42ea21246d732f31"
+    },
+    {
+      "file": "assets/film-poster.webp",
+      "bytes": 21300,
+      "sha256": "c2b4eaadf8ffbc909b5f3654345da68e53ef218cbe98e2e19c4e24593614c3e9"
+    },
+    {
+      "file": "assets/film-compact.mp4",
+      "bytes": 845267,
+      "sha256": "91b8548e28b1e061d7562fd8aa582ad1feda15890424b0583e5c4622d138aa5d"
+    },
+    {
+      "file": "assets/film-portrait.mp4",
+      "bytes": 1484204,
+      "sha256": "84ef410e9c7ab8ca9b00c71192d103863f297c27ae04fb6bb3100f32fef54202"
+    },
+    {
+      "file": "assets/film-portrait-poster.webp",
+      "bytes": 9392,
+      "sha256": "6fee582213a49a0e590c61fd4d362b66bac9d05add102b92cc7982199e9efdf6"
+    },
+    {
+      "file": "assets/wordmark.mp4",
+      "bytes": 259021,
+      "sha256": "60716ce9d785aef3cbdfd1d2971b8d6db4007f538cc94ef0ca557f35b69fccff"
+    },
+    {
+      "file": "assets/green-film.mp4",
+      "bytes": 503766,
+      "sha256": "6f9de8ef76f44a69fe6b2be51114174ced10bd287b589b781903e0a81acb4b36"
+    },
+    {
+      "file": "assets/green-portrait.mp4",
+      "bytes": 649906,
+      "sha256": "db9714cbf87ce7188d87164c3a534f326c4272ebf05e159bfc86e5df6cc5a67d"
+    },
+    {
+      "file": "assets/green-portrait-poster.webp",
+      "bytes": 5786,
+      "sha256": "84acb090fc9f0ca6ae24c934974e5315c5a1407c45d66c6ac4826c363d36ae92"
+    }
+  ],
+  "bytes": 11376055
+}
