@@ -5,9 +5,22 @@ from mathutils import Vector
 from bpy_extras.object_utils import world_to_camera_view
 s=bpy.context.scene
 cam=s.camera
-cam.location.x=-1.1
-cam.data.lens=46
+cam.location.x=-.8
+cam.data.lens=65
 cam.data.sensor_fit='HORIZONTAL'
+# A genuine 9:16 screen and bezel, built from the existing scene geometry.
+width=3.0;height=width*16/9;center_z=2.75
+for name,extra in [('Screen shadow housing',.14),('Screen outer brushed bezel',.075)]:
+ o=bpy.data.objects[name];o.dimensions=(width+extra,o.dimensions.y,height+extra)
+aperture=bpy.data.objects['Exact screen aperture']
+for v in aperture.data.vertices:
+ v.co.x*=width/5.56
+ v.co.z=center_z+(v.co.z-center_z)*(height/(5.56*9/16))
+# Bring the original sculpture and its plinth into the portrait composition.
+for o in s.objects:
+ if o.name.startswith(('DELREY exact supplied icon','Monolithic cast pedestal','Pedestal 12 mm','Sculpture pin')):o.location.x+=1.8
+light=bpy.data.objects.get('Warm quiet sculpture edge')
+if light:light.location.x+=1.8
 s.render.resolution_x=720
 s.render.resolution_y=1440
 s.render.resolution_percentage=100

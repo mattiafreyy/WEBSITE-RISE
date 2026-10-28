@@ -359,12 +359,12 @@ body{background:var(--paper)}
 
 /* Portrait camera keeps both the screen and the original DELREY sculpture in view. */
 @media(max-width:700px){
- .room-world{width:max(114.15525115vw,50svh);height:max(228.31050230vw,100svh);aspect-ratio:1/2;transform-origin:43.8% 50%;transform:translate(-43.8%,-50%)}
- .room-screen{left:35.4739010334%;top:43.0233776569%;width:48.0744719505%;height:13.5209441185%}
+ .room-world{width:max(113.63636364vw,50svh);height:max(227.27272728vw,100svh);aspect-ratio:1/2;transform-origin:44% 50%;transform:translate(-44%,-50%)}
+ .room-screen{left:41.4474964142%;top:33.4040880203%;width:36.6535842419%;height:32.5809627771%}
  .reduce-motion .room-sticky{height:100svh;top:auto}
- .reduce-motion .room-world{width:max(114.15525115vw,50svh)!important;height:max(228.31050230vw,100svh)!important;transform:translate(-43.8%,-50%)!important}
+ .reduce-motion .room-world{width:max(113.63636364vw,50svh)!important;height:max(227.27272728vw,100svh)!important;transform:translate(-44%,-50%)!important}
 }
 @media(prefers-reduced-motion:reduce) and (max-width:700px){
  .room-sticky{height:100svh;top:auto}
- .room-world{width:max(114.15525115vw,50svh)!important;height:max(228.31050230vw,100svh)!important;transform:translate(-43.8%,-50%)!important}
+ .room-world{width:max(113.63636364vw,50svh)!important;height:max(227.27272728vw,100svh)!important;transform:translate(-44%,-50%)!important}
 }

@@ -137,11 +137,11 @@ function sampleCurve(keys,p,column=1){
 function roomProgress(p){return 1-(sampleCurve(roomKeys,p)-1)/2.4}
 function room(p,w,h){
  const mobile=w<=700;
- const imageW=mobile?Math.max(w/.876,h/2):Math.max(w,h*16/9),imageH=imageW*(mobile?2:9/16);
- const screen=mobile?{x:.3547390103340149,y:.43023377656936646,w:.48074471950531006,h:.13520944118499756}:{x:.34323543310165405,y:.33822327852249146,w:.3135291337966919,h:.3135290741920471};
- const fullScale=mobile?1.02:Math.max(w/(imageW*screen.w),h/(imageH*screen.h))*1.068;
- const t=roomProgress(p);
- return {scale:lerp(fullScale,1,t),imageW,imageH,originX:mobile?.438:screen.x+screen.w/2,originY:mobile?.5:screen.y+screen.h/2,hold:p>=.72,screen};
+ const imageW=mobile?Math.max(w/.88,h/2):Math.max(w,h*16/9),imageH=imageW*(mobile?2:9/16);
+ const screen=mobile?{x:0.4144749641418457,y:0.33404088020324707,w:0.36653584241867065,h:0.32580962777137756}:{x:.34323543310165405,y:.33822327852249146,w:.3135291337966919,h:.3135290741920471};
+ const fullScale=mobile?1.8:Math.max(w/(imageW*screen.w),h/(imageH*screen.h))*1.068;
+ const t=mobile?smooth(p):roomProgress(p);
+ return {scale:lerp(fullScale,1,t),imageW,imageH,originX:mobile?lerp(screen.x+screen.w/2,.44,t):screen.x+screen.w/2,originY:mobile?.5:screen.y+screen.h/2,hold:mobile?p>=.98:p>=.72,screen};
 }
 function cards(p,index,h){const center=.5076+index*.1984;const local=(p-center)/.1984;return {x:[-15,19,-12,16][index],y:local*-h*1.3,angle:clamp(local,-1,1)*-15*(index%2?-1:1),opacity:1-clamp((Math.abs(local)-.85)/.35),scale:1-Math.min(.025,Math.abs(local)*.01)}}
 function finale(p,w,h){
@@ -192,7 +192,7 @@ function setupResponsiveMedia(){
  const mobile=matchMedia('(max-width:700px)').matches;
  $$('video[data-portrait-film],video[data-compact-film],video.green-film').forEach(video=>{
   const green=video.classList.contains('green-film');
-  const portrait=mobile&&(video.hasAttribute('data-portrait-film')||green);
+  const portrait=mobile&&(video.hasAttribute('data-portrait-film')||video.hasAttribute('data-compact-film')||green);
   const source=green?(mobile?'assets/green-portrait.mp4':'assets/green-film.mp4'):portrait?'assets/film-portrait.mp4':mobile?'assets/film-compact.mp4':'assets/film.mp4';
   if(video.dataset.source===source)return;
   video.dataset.source=source;video.poster=portrait?(green?'assets/green-portrait-poster.webp':'assets/film-portrait-poster.webp'):'assets/film-poster.webp';

@@ -37,7 +37,7 @@ function setupResponsiveMedia(){
  const mobile=matchMedia('(max-width:700px)').matches;
  $$('video[data-portrait-film],video[data-compact-film],video.green-film').forEach(video=>{
   const green=video.classList.contains('green-film');
-  const portrait=mobile&&(video.hasAttribute('data-portrait-film')||green);
+  const portrait=mobile&&(video.hasAttribute('data-portrait-film')||video.hasAttribute('data-compact-film')||green);
   const source=green?(mobile?'assets/green-portrait.mp4':'assets/green-film.mp4'):portrait?'assets/film-portrait.mp4':mobile?'assets/film-compact.mp4':'assets/film.mp4';
   if(video.dataset.source===source)return;
   video.dataset.source=source;video.poster=portrait?(green?'assets/green-portrait-poster.webp':'assets/film-portrait-poster.webp'):'assets/film-poster.webp';
