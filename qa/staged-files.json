@@ -9,13 +9,13 @@
     },
     {
       "file": "style.css",
-      "bytes": 50668,
-      "sha256": "abf84497774b490955dbd1e5f2071383ccca4603dd7b98ea73e755e1fa33104e"
+      "bytes": 56018,
+      "sha256": "dda62de33d07da998c368ea0c08e321ff57d1df3f18970dbd7aaff28ecf45a63"
     },
     {
       "file": "site.js",
-      "bytes": 56859,
-      "sha256": "bd4bfc2ebd3848e4ed304270648e5c165f6efd2525774219060e99aa6698fd84"
+      "bytes": 57299,
+      "sha256": "91fe513efc27ed32535872f558fb166f4f18116441d6290d8d444f6a07ba2926"
     },
     {
       "file": "assets/NimbusSans-Regular.otf",
@@ -173,5 +173,5 @@
       "sha256": "84acb090fc9f0ca6ae24c934974e5315c5a1407c45d66c6ac4826c363d36ae92"
     }
   ],
-  "bytes": 11376055
+  "bytes": 11381845
 }
